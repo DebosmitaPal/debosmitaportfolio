@@ -4,7 +4,7 @@ import DNA from "../assets/dnaimage.png";
 import Ballistic from "../assets/ballisticimage.png";
 import Bengal from "../assets/bengalimage.png";
 import Appointment from "../assets/appointmentimage.png";
-
+import Learn from "../assets/learnplayimage.png";
 const projects = [
   {
     title: "DNA Vision",
@@ -41,6 +41,15 @@ const projects = [
     demo: "https://ballistic-project.vercel.app/",
     image: Ballistic,
     glow: "shadow-cyan-500",
+  },
+  {
+    title: "LearnPlay",
+    description:
+      "LearnPlay is an interactive quiz-based web application designed to make learning fun, engaging, and intelligent. It combines gamified quizzes with assistance and voice-based explanations to enhance user understanding.",
+    github: "https://github.com/DebosmitaPal/LearnPlay",
+    demo: "https://learn-play-jsga.vercel.app/",
+    image: Learn,
+    glow: "shadow-rose-500",
   },
 ];
 

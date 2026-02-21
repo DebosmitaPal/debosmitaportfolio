@@ -65,7 +65,7 @@ export default function Hero() {
           <div className="mt-6 flex flex-col sm:flex-row gap-4 items-center">
             {/* Resume Download Button */}
             <a
-              href="/resume_debosmita.pdf"
+              href="/resume(general).pdf"
               download
               className="flex items-center gap-2 px-6 py-3 bg-pink-600 text-white font-semibold rounded-lg shadow-lg hover:bg-violet-300 hover:scale-105 hover:shadow-lg hover:shadow-violet-500/50 transition-all duration-300"
             >
