@@ -16,9 +16,9 @@ const projects = [
     glow: "shadow-blue-500",
   },
   {
-    title: "Appointment booking Website",
+    title: "SyncUniServe",
     description:
-      "This website allows users to book appointments for a variety of services, including medical, beauty, and home repair.",
+      "This appointment booking website allows users to book appointments for a variety of services, including medical, beauty, and home repair.",
     github: "https://github.com/DebosmitaPal/appointment-booking-website",
     demo: "https://appointment-booking-website-seven.vercel.app/",
     image: Appointment,
@@ -34,9 +34,9 @@ const projects = [
     glow: "shadow-white",
   },
    {
-    title: "Ballistic Recognition Tool",
+    title: "BallisticsId",
     description:
-      "A MERN-based website that matches and analyzes uploaded ballistic images for recognition and helps in criminal investigations.",
+      "A MERN-based Ballistic recognition tool website that matches and analyzes uploaded ballistic images for recognition and helps in criminal investigations.",
     github: "https://github.com/DebosmitaPal/Ballistic-Project",
     demo: "https://ballistic-project.vercel.app/",
     image: Ballistic,

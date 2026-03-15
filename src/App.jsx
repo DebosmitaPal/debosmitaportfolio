@@ -2,7 +2,10 @@ import React from "react";
 import { Navbar } from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
+import Skills from "./components/Skills";
 import Projects from "./components/Projects";
+import Certificates from "./components/Certificates";
+import Achievements from "./components/Achievements";
 import Contacts from "./components/Contacts";
 import Footer from "./components/Footer";
 function App() {
@@ -19,8 +22,20 @@ function App() {
           <About />
         </section>
 
+        <section id="skills" className="min-h-screen">
+          <Skills />
+        </section>
+
         <section id="projects" className="min-h-screen">
           <Projects />
+        </section>
+
+        <section id="certificates" className="min-h-screen">
+          <Certificates />
+        </section>
+
+        <section id="achievements" className="min-h-screen">
+          <Achievements />
         </section>
 
         <section id="contacts" className="min-h-screen">
