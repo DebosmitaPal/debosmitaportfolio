@@ -6,6 +6,7 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Certificates from "./components/Certificates";
 import Achievements from "./components/Achievements";
+import Education from "./components/Education";
 import Contacts from "./components/Contacts";
 import Footer from "./components/Footer";
 function App() {
@@ -36,6 +37,10 @@ function App() {
 
         <section id="achievements" className="min-h-screen">
           <Achievements />
+        </section>
+
+        <section id="education" className="min-h-screen">
+          <Education />
         </section>
 
         <section id="contacts" className="min-h-screen">
