@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { FaGithub, FaArrowDown } from "react-icons/fa";
 import { motion } from "framer-motion";
-import Debosmita from "../assets/image.jpg";
+import Debosmita from "../assets/image.png";
 import HTML5Icon from "../assets/tech_icons/html.webp";
 import JSIcon from "../assets/tech_icons/javascript.png";
 import JavaIcon from "../assets/tech_icons/java.png";
@@ -120,7 +120,7 @@ export default function Hero() {
           <img
             src={Debosmita}
             alt="Debosmita"
-            className="relative z-10 w-45 h-65 md:w-72 md:h-92 rounded-full object-cover border-4 border-white shadow-xl"
+            className="relative  z-10 w-45 h-64 md:w-72 md:h-92 rounded-full object-cover border-4 border-white shadow-xl"
           />
         </div>
 
