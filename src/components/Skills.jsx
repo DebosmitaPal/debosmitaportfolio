@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import mongodb from "../assets/tech_icons/mongodb.jpeg";
 import docker from "../assets/tech_icons/docker.webp";
 import react from "../assets/tech_icons/react.png";
@@ -11,70 +11,91 @@ import postman from "../assets/tech_icons/postman.jpg";
 import html from "../assets/tech_icons/html.webp";
 import vscode from "../assets/tech_icons/vscode.png";
 import express from "../assets/tech_icons/express.webp";
+
 export default function Skills() {
+
+const [filter, setFilter] = useState("All");
 
 const skills = [
 {
 name: "MongoDB",
 icon: mongodb,
-desc: "MongoDB is a NoSQL database used for scalable web applications."
+desc: "MongoDB is a NoSQL database used for scalable web applications.",
+category: "Database"
 },
 {
 name: "Tailwind",
 icon: tailwind,
-desc: "Tailwind CSS helps build modern responsive UI using utility classes."
+desc: "Tailwind CSS helps build modern responsive UI using utility classes.",
+category: "Frontend"
 },
 {
 name: "Docker",
 icon: docker,
-desc: "Docker allows applications to run inside containers."
+desc: "Docker allows applications to run inside containers.",
+category: "Tools"
 },
 {
 name: "React",
 icon: react,
-desc: "React is a JavaScript library used to build dynamic UI."
+desc: "React is a JavaScript library used to build dynamic UI.",
+category: "Frontend"
 },
 {
 name: "JavaScript",
 icon: javascript,
-desc: "JavaScript powers interactive web development."
+desc: "JavaScript powers interactive web development.",
+category: "Frontend"
 },
 {
 name: "NodeJS",
 icon: node,
-desc: "NodeJS allows server-side programming with JavaScript."
+desc: "NodeJS allows server-side programming with JavaScript.",
+category: "Backend"
 },
 {
 name: "Java",
 icon: java,
-desc: "Java is a programming language used for mobile and enterprise applications."
+desc: "Java is a programming language used for mobile and enterprise applications.",
+category: "Backend"
 },
 {
 name: "Git",
 icon: git,
-desc: "Git is a version control system for tracking changes in source code."
+desc: "Git is a version control system for tracking changes in source code.",
+category: "Tools"
 },
 {
 name: "Postman",
 icon: postman,
-desc: "Postman is a tool for testing APIs."
+desc: "Postman is a tool for testing APIs.",
+category: "Tools"
 },
 {
 name: "HTML",
 icon: html,
-desc: "HTML is the standard markup language for creating web pages."
+desc: "HTML is the standard markup language for creating web pages.",
+category: "Frontend"
 },
 {
 name: "VSCode",
 icon: vscode,
-desc: "VSCode is a popular code editor with many extensions."
+desc: "VSCode is a popular code editor with many extensions.",
+category: "Tools"
 },
 {
 name: "Express",
 icon: express,
-desc: "Express is a minimal and flexible Node.js web application framework."
+desc: "Express is a minimal and flexible Node.js web application framework.",
+category: "Backend"
 }
 ];
+
+// FILTERED SKILLS
+const filteredSkills =
+filter === "All"
+? skills
+: skills.filter(skill => skill.category === filter);
 
 return (
 <div className="relative bg-black py-28 overflow-hidden">
@@ -82,13 +103,32 @@ return (
 {/* STAR BACKGROUND */}
 <div className="star-field"></div>
 
-<h1 className="text-5xl font-bold font-serif text-center text-white mb-20 relative z-10">
+<h1 className="text-5xl font-bold font-serif text-center text-white mb-10 relative z-10">
 Technologies and Skills
 </h1>
 
+{/* FILTER BUTTONS */}
+<div className="flex justify-center gap-6 mb-16 relative z-10 flex-wrap">
+
+{["All", "Frontend", "Backend", "Database", "Tools"].map((cat) => (
+<button
+key={cat}
+onClick={() => setFilter(cat)}
+className={`px-5 py-2 rounded-full border transition duration-300
+${filter === cat
+? "bg-cyan-400 text-black shadow-lg"
+: "text-white border-cyan-400 hover:bg-cyan-400 hover:text-black"
+}`}
+>
+{cat}
+</button>
+))}
+
+</div>
+
 <div className="flex flex-wrap justify-center gap-16 relative z-10">
 
-{skills.map((skill, index) => (
+{filteredSkills.map((skill, index) => (
 
 <div key={index} className="flip-card">
 
