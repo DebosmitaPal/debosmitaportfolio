@@ -5,6 +5,7 @@ import Ballistic from "../assets/ballisticimage.png";
 import Bengal from "../assets/bengalimage.png";
 import Appointment from "../assets/appointmentimage.png";
 import Learn from "../assets/learnplayimage.png";
+import Bean from "../assets/coffeeimage.png";
 const projects = [
   {
     title: "DNA Vision",
@@ -50,6 +51,15 @@ const projects = [
     demo: "https://learn-play-jsga.vercel.app/",
     image: Learn,
     glow: "shadow-rose-500",
+  },
+  {
+    title: "BeanAuction",
+    description:
+      "BeanAuction is a dynamic web application that allows users to participate in real-time auctions for exported coffee beans, providing a seamless and engaging shopping experience.",
+    github: "https://github.com/DebosmitaPal/Coffee-auction-platform",
+    demo: "https://coffee-auction-platform-enw9.vercel.app/",
+    image: Bean,
+    glow: "shadow-yellow-200",
   },
 ];
 
