@@ -56,8 +56,8 @@ const projects = [
     title: "BeanAuction",
     description:
       "BeanAuction is a dynamic web application that allows users to participate in real-time auctions for exported coffee beans, providing a seamless and engaging shopping experience.",
-    github: "https://github.com/DebosmitaPal/Coffee-auction-platform",
-    demo: "https://coffee-auction-platform-enw9.vercel.app/",
+    github: "https://github.com/DebosmitaPal/BeanAuction",
+    demo: "https://beanauction.vercel.app/",
     image: Bean,
     glow: "shadow-yellow-200",
   },
